@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- Email JS start -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('dlGYzs_WN0_oecDv2');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+    <!-- Email JS start -->
+
+
+
+    <!-- Meta Tag -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta
+      name="description"
+      content="CarePlus Diagnostic Services LLC - Contact Us"
+    />
+    <meta name="author" content="root" />
+    <title>CarePlus Diagnostic Services LLC - Contact Us</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Barlow:400,500,500i,700,700i&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,600,600i,700,700i&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--  CSS Style -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome-all-5.9.0.min.css" />
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <link rel="stylesheet" href="assets/webfonts/flaticon/flaticon.css" />
+    <link rel="stylesheet" href="assets/css/owl.css" />
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="assets/css/layerslider.css" />
+    <link rel="stylesheet" href="assets/css/template.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/ctg/medical.css" />
+  </head>
+
+  <body>
+    <div class="preloader">
+      <div class="text-center text-primary xy-center position-relative">
+        <div class="spinner-border" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+      </div>
+    </div>
+
+    <div id="page_wrapper">
+      <div class="row">
+        <!-- Header Section Start -->
+        <header class="standard-header nav-on-top">
+          <div class="top-header sm-mx-none bg-danger">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <ul class="top-contact">
+                    <li>
+                      <a href="#" class="text-white"
+                        ><i class="fas fa-phone mr-1"></i>Emergency Line : +1 (847)-306-3340</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="text-white"
+                        ><i class="fas fa-envelope mr-1"></i
+                        >support@uscpds.com</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="main-nav bg-white">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <nav
+                    class="navbar navbar-expand-lg navbar-light nav-secondary nav-primary-hover py-2 transation"
+                  >
+                    <a class="navbar-brand" href="index-medical.html.html"
+                      ><img
+                        class="nav-logo"
+                        src="assets/images/logos/logo.png"
+                        width = "140"
+                        alt="Image not found"
+                    /></a>
+                    <button
+                      class="navbar-toggler bg-light"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#navbarSupportedContent"
+                      aria-controls="navbarSupportedContent"
+                      aria-expanded="false"
+                      aria-label="Toggle navigation"
+                    >
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div
+                      class="collapse navbar-collapse"
+                      id="navbarSupportedContent"
+                    >
+                      <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                          <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="about-us.html">About us</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="service.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href = "\templates\assets\CarePlus_RequisitionForm_2868.pdf" download = "CarePlus_RequisitionForm">Download Order Form</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="https://www.rapidrad.com/login/">Facility Login</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <!-- Header Section End -->
+
+        <!--  Banner Start -->
+        <div
+          class="page-banner-image w-100"
+          style="
+            background: url(assets/images/background/banner.png) no-repeat 0 0 /
+              cover;
+            background-position: center center;
+          "
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 py-8">
+                <h1 class="text-primary page-title mb-3">Contact</h1>
+                <nav aria-label="breadcrumb" class="text-secondary">
+                  <ol class="breadcrumb mb-0 bg-transparent p-0">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li
+                      class="breadcrumb-item active text-primary"
+                      aria-current="page"
+                    >
+                      Contact
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  Banner End -->
+
+        <!--  Depeartment Start -->
+        <div class="full-row bg-light">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-7">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <h3 class="down-line w-100 my-4">Send Us A Message</h3>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 mb-3">
+                    <!-- Contact-Form -->
+                    <form id="contact-form" action="#" method="post">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          name="name"
+                          placeholder="Name"
+                          class="form-control bg-transparent border"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          name="email"
+                          placeholder="Email Address"
+                          class="form-control bg-transparent border"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          name="phone"
+                          placeholder="Phone"
+                          class="form-control bg-transparent border"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          name="text"
+                          placeholder="Subject"
+                          class="form-control bg-transparent border"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <textarea
+                          name="message"
+                          placeholder="Message"
+                          class="form-control bg-transparent border"
+                          cols="15"
+                          rows="6"
+                        ></textarea>
+                      </div>
+                      <div class="form-group">
+                        <a href="#" class="btn btn-primary">Send</a>
+                      </div>
+                    </form>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-5">
+                <div class="sidebar-widget">
+                  <div class="widget doctors-info">
+                      <h3 class="down-line w-100 my-4">Location</h3>
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2955.4686028451806!2d-87.83890062442227!3d42.2044283449206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fc017c6a3f999%3A0x40d8265fb44dcd7f!2s2868%20Skokie%20Valley%20Rd%2C%20Highland%20Park%2C%20IL%2060035!5e0!3m2!1sen!2sus!4v1699243159147!5m2!1sen!2sus" width="500" height="425" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  Depeartment End -->
+
+        <!-- Footer start -->
+        <footer class="full-row bg-secondary">
+          <div class="container">
+            <div class="row">
+              
+              <!-- <div class="col-lg-12"> -->
+                <div class="col-lg-3 col-md-6">
+                  <div class=" text-white footer-widget footer-nav mb-4 transation">
+                    <h3 class="text-white widget-title mb-4">Quick Contact</h3>
+                    <ul>
+                    <li><a class="text-white" href="#">Phone: +1 (847)-306-3340</a></li>
+                    <li><a class="text-white" href="#">Fax: (847)-306-3475</a></li>
+                    <li><a class="text-white" href="#">Email: support@uscpds.com</a></li>
+                    <li><a class="text-white" href="#">Location: </a></li>
+                    <li><a class="text-white" href="#">2868 Skokie Valley Rd STE 4, <br> Highland Park, IL, 60035</a></li>
+                    </ul>
+                  </div>
+                  </div>
+    
+                  <div class="col-lg-9">
+                  <h1 class="text-center text-white font-italic w-sm-100 text-right">We strive to make healthcare a seamless and empowering experience!</h1>
+                  <p class="w-50 text-light text-center mt-5 mx-auto w-sm-100 text-right">We're here to provide you with the highest quality diagnostics and care. Discover the path to better health with us today</p>
+                </div>
+              <!-- </div> -->
+            </div>
+          </div>
+        </footer>
+        <div class="full-row bg-dark py-4">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8">
+                <ul class="bottom-nav">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about-us.html">About Us</a></li>
+                  <li><a href="service.html">Services</a></li>
+                  <li><a href = "\templates\assets\CarePlus_RequisitionForm_2868.pdf" download = "CarePlus_RequisitionForm">Download Order Form</a></li>
+                  <li><a href="https://www.rapidrad.com/login/">Facility Login</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-4">
+                <div class="copyright"> <span>&copy; 2020 All Rights Reserved</a></span> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="bg-primary text-white" id="scroll"><i class="fa fa-angle-up"></i></a>
+      </div>
+    </div>	
+        <!-- Footer end -->
+
+        <!--   Scroll to top start  -->
+        <a
+          href="#"
+          class="bg-primary text-white transation"
+          id="scroll"
+          style="display: inline"
+          ><i class="fa fa-angle-up"></i
+        ></a>
+        <!--   Scroll to top end  -->
+      </div>
+    </div>
+
+    <!--===============================================================================================-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/greensock.js"></script>
+    <script src="assets/js/layerslider.transitions.js"></script>
+    <script src="assets/js/layerslider.kreaturamedia.jquery.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/fontawesome-all-5.9.0.min.js"></script>
+    <script src="assets/js/jquery.fancybox.min.js"></script>
+    <script src="assets/js/owl.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/paraxify.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <!-- use for map style -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPZ-Erd-14Vf2AoPW2Pzlxssf6-2R3PPs"></script>
+    <script src="assets/js/map.scripts.js"></script>
+    <script>
+      (function ($) {
+        var _latitude = 42.204535663703304;
+        var _longitude = -87.83626132698318;
+        init(_latitude, _longitude);
+      })(jQuery);
+    </script>
+    <!-- <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2955.4687873868365!2d-87.83632569999999!3d42.2044244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fc017c6a3f999%3A0x40d8265fb44dcd7f!2s2868%20Skokie%20Valley%20Rd!5e0!3m2!1sen!2sus!4v1698903428520!5m2!1sen!2sus"
+      width="600"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe> -->
+  </body>
+</html>
